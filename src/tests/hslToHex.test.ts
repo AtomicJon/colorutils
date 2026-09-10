@@ -1,13 +1,5 @@
 import hslToHex from '../hslToHex';
-import {
-  HEX_TEAL,
-  HEX_WHITE,
-  HEX_BLACK,
-  HSL_BLACK,
-  HSL_RED,
-  HSL_TEAL,
-  HSL_WHITE,
-} from './data/colors';
+import { HEX_TEAL, HEX_WHITE, HEX_BLACK, HSL_BLACK, HSL_RED, HSL_TEAL, HSL_WHITE } from './data/colors';
 
 /**
  * HSL to HEX

@@ -1,4 +1,4 @@
-import { Hsl } from './colorTypes';
+import type { Hsl } from './colorTypes';
 
 /**
  * Takes given red, green, and blue values and returns the HSL representation
@@ -23,7 +23,7 @@ export default function rgbToHsl(red: number, green: number, blue: number): Hsl 
     // Achromatic - no color
   } else {
     const diff = max - min;
-    saturation = lightness > 0.5 ? (diff / (2 - max - min)) : diff / (max + min);
+    saturation = lightness > 0.5 ? diff / (2 - max - min) : diff / (max + min);
     switch (max) {
       case redPercent: {
         hue = (greenPercent - bluePercent) / diff + (greenPercent < bluePercent ? 6 : 0);

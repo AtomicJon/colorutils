@@ -9,7 +9,6 @@ export const HEX_CYAN = '#00ffff';
 export const HEX_BLUE = '#0000ff';
 export const HEX_MAGENTA = '#ff00ff';
 
-
 // Known RGB Values
 export const RGB_TEAL = {
   red: 60,
@@ -77,35 +76,35 @@ export const CMYK_TEAL = {
   magenta: 0,
   yellow: 0.1074766355140187,
   black: 0.16078431372549018,
-}
+};
 
 export const CMYK_RED = {
   cyan: 0,
   magenta: 1,
   yellow: 1,
   black: 0,
-}
+};
 
 export const CMYK_GREEN = {
   cyan: 1,
   magenta: 0,
   yellow: 1,
   black: 0,
-}
+};
 
 export const CMYK_BLUE = {
   cyan: 1,
   magenta: 1,
   yellow: 0,
   black: 0,
-}
+};
 
 export const CMYK_BLACK = {
   cyan: 0,
   magenta: 0,
   yellow: 0,
   black: 1,
-}
+};
 
 // Known HSL Values
 export const HSL_TEAL = {
@@ -119,7 +118,6 @@ export const HSL_DARK_TEAL = {
   saturation: 0.5469613259668509,
   lightness: 0.35490196078431374,
 };
-
 
 export const HSL_WHITE = {
   hue: 0,
@@ -168,7 +166,6 @@ export const HSL_MAGENTA = {
   saturation: 1,
   lightness: 0.5,
 };
-
 
 // Known HSV Values
 export const HSV_TEAL = {

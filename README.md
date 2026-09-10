@@ -5,9 +5,11 @@ A color utility to help with converting between formats and getting color detail
 ## Functions
 
 ### `hexToRgb`
+
 Converts a HEX color string to its RGB values
 
 #### Example
+
 ```js
 import { hexToRgb } from 'colorutils';
 
@@ -17,12 +19,12 @@ console.log(rgb);
 // Object { red: 255, green: 0, blue: 0 }
 ```
 
-
-
 ### `hsvToRgb`
+
 Converts HSV color values to its RGB values
 
 #### Example
+
 ```js
 import { hsvToRgb } from 'colorutils';
 
@@ -32,12 +34,12 @@ console.log(rgb);
 // Object { red: 0, green: 255, blue: 255 }
 ```
 
-
-
 ### `rgbToHex`
+
 Converts RGB values to a HEX color string
 
 #### Example
+
 ```js
 import { rgbToHex } from 'colorutils';
 
@@ -47,12 +49,12 @@ console.log(hex);
 // #00ff00
 ```
 
-
-
 ### `hsvToHex`
+
 Converts HSV values to a HEX color string
 
 #### Example
+
 ```js
 import { hsvToHex } from 'colorutils';
 
@@ -62,12 +64,12 @@ console.log(hex);
 // #0000ff
 ```
 
-
-
 ### `hexToHsv`
+
 Converts a HEX color string to a HSV values
 
 #### Example
+
 ```js
 import { hexToHsv } from 'colorutils';
 
@@ -78,6 +80,7 @@ console.log(hsv);
 ```
 
 ### `sanitizeHex`
+
 Sanitizes a hex string - removing invalid characters and expanding it to 6 characters, e.g.:
 
 ```
@@ -88,8 +91,8 @@ Sanitizes a hex string - removing invalid characters and expanding it to 6 chara
 zz123 => #112233
 ```
 
-
 #### Example
+
 ```js
 import { sanitizeHex } from 'colorutils';
 
@@ -100,10 +103,12 @@ console.log(sanitizedHex);
 ```
 
 ### `getPerceivedLuminance`
+
 Get the perceived brightness of a given color.
 See: https://www.w3.org/TR/AERT/#color-contrast
 
 #### Example
+
 ```js
 import { getPerceivedLuminance } from 'colorutils';
 

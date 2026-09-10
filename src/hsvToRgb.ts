@@ -1,4 +1,4 @@
-import { Rgb } from 'colorTypes';
+import type { Rgb } from './colorTypes';
 
 /**
  * Takes given hue, saturation and value and returns the respective RGB values
@@ -9,9 +9,7 @@ import { Rgb } from 'colorTypes';
  */
 export default function hsvToRgb(hue: number, saturation: number, value: number): Rgb {
   // Bounds check
-  if ((hue < 0 || hue > 360)
-      || (saturation < 0 || saturation > 1)
-      || (value < 0 || value > 1)) {
+  if (hue < 0 || hue > 360 || saturation < 0 || saturation > 1 || value < 0 || value > 1) {
     throw new Error('Invalid hue, saturation, or value - all values must be between 0 and 1');
   }
 

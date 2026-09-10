@@ -1,4 +1,4 @@
-import { Rgb } from 'colorTypes';
+import type { Rgb } from './colorTypes';
 
 function hueToRgb(p: number, q: number, t: number) {
   let clampedT = t;
@@ -9,13 +9,13 @@ function hueToRgb(p: number, q: number, t: number) {
     clampedT -= 360;
   }
 
-  if(clampedT < 60) {
+  if (clampedT < 60) {
     return p + (q - p) * 6 * (clampedT / 360);
   }
-  if(clampedT < 180) {
+  if (clampedT < 180) {
     return q;
   }
-  if(clampedT < 240) {
+  if (clampedT < 240) {
     return p + (q - p) * ((240 - clampedT) / 360) * 6;
   }
 
@@ -31,9 +31,7 @@ function hueToRgb(p: number, q: number, t: number) {
  */
 export default function hslToRgb(hue: number, saturation: number, lightness: number): Rgb {
   // Bounds check
-  if ((hue < 0 || hue > 360)
-      || (saturation < 0 || saturation > 1)
-      || (lightness < 0 || lightness > 1)) {
+  if (hue < 0 || hue > 360 || saturation < 0 || saturation > 1 || lightness < 0 || lightness > 1) {
     throw new Error('Invalid hue, saturation, or value - all values must be between 0 and 1');
   }
 
@@ -47,7 +45,7 @@ export default function hslToRgb(hue: number, saturation: number, lightness: num
     };
   }
 
-  const q = (lightness < 0.5) ? lightness * (1 + saturation) : lightness + saturation - lightness * saturation;
+  const q = lightness < 0.5 ? lightness * (1 + saturation) : lightness + saturation - lightness * saturation;
   const p = 2 * lightness - q;
 
   const red = hueToRgb(p, q, hue + 120);

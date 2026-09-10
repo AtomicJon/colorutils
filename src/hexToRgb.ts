@@ -1,4 +1,4 @@
-import { Rgb } from './colorTypes';
+import type { Rgb } from './colorTypes';
 
 /**
  * Converts a hex color string to its red, green, and blue component values
@@ -24,7 +24,7 @@ export default function hexToRgb(colorHex: string): Rgb {
 
   const red = (rgb >> 16) & 0xff;
   const green = (rgb >> 8) & 0xff;
-  const blue = (rgb) & 0xff;
+  const blue = rgb & 0xff;
 
   return {
     red,

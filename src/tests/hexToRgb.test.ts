@@ -1,12 +1,5 @@
 import hexToRgb from '../hexToRgb';
-import {
-  HEX_TEAL,
-  RGB_TEAL,
-  RGB_WHITE,
-  HEX_WHITE,
-  RGB_BLACK,
-  HEX_BLACK,
-} from './data/colors';
+import { HEX_TEAL, RGB_TEAL, RGB_WHITE, HEX_WHITE, RGB_BLACK, HEX_BLACK } from './data/colors';
 
 /**
  * HEX to RGB
@@ -16,7 +9,6 @@ describe('hexToRgb', () => {
     const teal = hexToRgb(HEX_TEAL);
     expect(teal).toStrictEqual(RGB_TEAL);
   });
-
 
   test('hexToRgb - white short', () => {
     const white = hexToRgb('#fff');

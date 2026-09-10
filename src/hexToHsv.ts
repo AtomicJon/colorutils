@@ -1,4 +1,4 @@
-import { Hsv } from './colorTypes';
+import type { Hsv } from './colorTypes';
 import hexToRgb from './hexToRgb';
 import rgbToHsv from './rgbToHsv';
 
@@ -9,11 +9,7 @@ import rgbToHsv from './rgbToHsv';
  */
 export default function hexToHsv(colorHex: string): Hsv {
   // Hex validation handled by hexToRgb
-  const {
-    red,
-    green,
-    blue,
-  } = hexToRgb(colorHex);
+  const { red, green, blue } = hexToRgb(colorHex);
 
   return rgbToHsv(red, green, blue);
 }

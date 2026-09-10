@@ -1,4 +1,4 @@
-import { Hsl } from './colorTypes';
+import type { Hsl } from './colorTypes';
 import hexToRgb from './hexToRgb';
 import rgbToHsl from './rgbToHsl';
 
@@ -9,11 +9,7 @@ import rgbToHsl from './rgbToHsl';
  */
 export default function hexToHsl(colorHex: string): Hsl {
   // Hex validation handled by hexToRgb
-  const {
-    red,
-    green,
-    blue,
-  } = hexToRgb(colorHex);
+  const { red, green, blue } = hexToRgb(colorHex);
 
   return rgbToHsl(red, green, blue);
 }
