@@ -1,4 +1,4 @@
-import { Cmyk } from './colorTypes';
+import type { Cmyk } from './colorTypes';
 import hexToRgb from './hexToRgb';
 import rgbToCmyk from './rgbToCmyk';
 
@@ -9,11 +9,7 @@ import rgbToCmyk from './rgbToCmyk';
  */
 export default function hexToCmyk(colorHex: string): Cmyk {
   // Hex validation handled by hexToRgb
-  const {
-    red,
-    green,
-    blue,
-  } = hexToRgb(colorHex);
+  const { red, green, blue } = hexToRgb(colorHex);
 
   return rgbToCmyk(red, green, blue);
 }

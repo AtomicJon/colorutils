@@ -1,4 +1,4 @@
-import { Hsv } from './colorTypes';
+import type { Hsv } from './colorTypes';
 
 /**
  * Takes given red, green, and blue values and returns the HSV representation
@@ -17,7 +17,7 @@ export default function rgbToHsv(red: number, green: number, blue: number): Hsv 
   const diff = max - min;
 
   let hue = 0;
-  const saturation = (max === 0) ? 0 : diff / max;
+  const saturation = max === 0 ? 0 : diff / max;
   const value = max;
 
   if (min === max) {

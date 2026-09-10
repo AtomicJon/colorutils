@@ -10,11 +10,7 @@ import rgbToHex from './rgbToHex';
  * @returns {string} The hex representation of the color
  */
 export default function cmykToHex(cyan: number, magenta: number, yellow: number, black: number): string {
-  const {
-    red,
-    green,
-    blue,
-  } = cmykToRgb(cyan, magenta, yellow, black);
+  const { red, green, blue } = cmykToRgb(cyan, magenta, yellow, black);
 
-  return rgbToHex(red, green, blue)
+  return rgbToHex(red, green, blue);
 }

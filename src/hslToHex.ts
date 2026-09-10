@@ -10,11 +10,7 @@ import rgbToHex from './rgbToHex';
  */
 export default function hslToHex(hue: number, saturation: number, lightness: number): string {
   // Bounds check handled by hslToRgb
-  const {
-    red,
-    green,
-    blue,
-  } = hslToRgb(hue, saturation, lightness);
+  const { red, green, blue } = hslToRgb(hue, saturation, lightness);
 
   return rgbToHex(red, green, blue);
 }

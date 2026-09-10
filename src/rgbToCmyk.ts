@@ -1,4 +1,4 @@
-import { Cmyk } from './colorTypes';
+import type { Cmyk } from './colorTypes';
 
 /**
  * Takes given red, green, and blue values and returns the CMYK representation
@@ -9,7 +9,7 @@ import { Cmyk } from './colorTypes';
  */
 export default function rgbToCmyk(red: number, green: number, blue: number): Cmyk {
   const redPercent = red / 255;
-  const greenPercent  =  green / 255;
+  const greenPercent = green / 255;
   const bluePercent = blue / 255;
 
   const black = Math.min(1 - redPercent, 1 - greenPercent, 1 - bluePercent);
@@ -22,5 +22,5 @@ export default function rgbToCmyk(red: number, green: number, blue: number): Cmy
     magenta,
     yellow,
     black,
-  }
+  };
 }

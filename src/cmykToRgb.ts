@@ -1,4 +1,4 @@
-import { Rgb } from './colorTypes';
+import type { Rgb } from './colorTypes';
 
 /**
  * Takes given cyan, magenta, yellow, and black values and returns the RGB representation
@@ -9,7 +9,7 @@ import { Rgb } from './colorTypes';
  * @returns {Rgb} The Rgb representation of the color
  */
 export default function cmykToRgb(cyan: number, magenta: number, yellow: number, black: number): Rgb {
-  const blackModifier = 1 - (black);
+  const blackModifier = 1 - black;
   const red = Math.round(255 * (1 - cyan) * blackModifier);
   const green = Math.round(255 * (1 - magenta) * blackModifier);
   const blue = Math.round(255 * (1 - yellow) * blackModifier);
@@ -18,5 +18,5 @@ export default function cmykToRgb(cyan: number, magenta: number, yellow: number,
     red,
     green,
     blue,
-  }
+  };
 }

@@ -7,5 +7,5 @@
  * @returns {number} The perceived brightness of the color (0.0 - 1.0)
  */
 export default function getPerceivedLuminance(red: number, green: number, blue: number): number {
-  return ((red * 0.299) + (green * 0.587) + (blue * 0.114)) / 255;
+  return (red * 0.299 + green * 0.587 + blue * 0.114) / 255;
 }

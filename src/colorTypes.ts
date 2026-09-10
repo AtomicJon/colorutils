@@ -8,7 +8,7 @@ export type Rgb = {
   red: number;
   green: number;
   blue: number;
-}
+};
 
 /**
  * @typedef {Object} Hsl
@@ -20,8 +20,7 @@ export type Hsl = {
   hue: number;
   saturation: number;
   lightness: number;
-}
-
+};
 
 /**
  * @typedef {Object} Hsv
@@ -33,12 +32,11 @@ export type Hsv = {
   hue: number;
   saturation: number;
   value: number;
-}
-
+};
 
 export type Cmyk = {
   cyan: number;
   magenta: number;
   yellow: number;
   black: number;
-}
+};

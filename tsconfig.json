@@ -1,19 +1,16 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "ignoreDeprecations": "6.0",
+    "rootDir": "./src",
     "module": "ESNext",
     "declaration": true,
     "declarationDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "src/**/*.test.ts",
-    "src/tests"
-  ]
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts", "src/tests"]
 }

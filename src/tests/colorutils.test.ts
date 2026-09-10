@@ -13,10 +13,7 @@ import {
   HSV_WHITE,
 } from './data/colors';
 
-import {
-  hexToHsv,
-  hsvToHex,
-} from '../colorutils';
+import { hexToHsv, hsvToHex } from '../colorutils';
 
 describe('Consistency checks', () => {
   test('hex > hsv > hex - teal', () => {
@@ -66,7 +63,6 @@ describe('Consistency checks', () => {
 
     expect(hex).toStrictEqual(startHex);
   });
-
 
   test('hsv > hex > hsv - teal', () => {
     const startHsv = HSV_TEAL;

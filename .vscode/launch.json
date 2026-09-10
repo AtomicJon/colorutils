@@ -5,9 +5,7 @@
       "type": "node",
       "name": "Jest Unit Tests",
       "request": "launch",
-      "args": [
-        "--runInBand"
-      ],
+      "args": ["--runInBand"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",

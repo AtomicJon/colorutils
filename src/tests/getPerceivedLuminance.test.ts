@@ -1,9 +1,5 @@
 import getPerceivedLuminance from '../getPerceivedLuminance';
-import {
-  RGB_TEAL,
-  RGB_WHITE,
-  RGB_BLACK,
-} from './data/colors';
+import { RGB_TEAL, RGB_WHITE, RGB_BLACK } from './data/colors';
 
 /**
  * Get Perceptive Luminesces
